@@ -1,3 +1,100 @@
 James Matthew Macahilig
 
 wregsrgegv
+
+ 1  ls
+    2  al
+    3  -al
+    4  ls-al
+    5  ls -al
+    6  cd .html
+    7  cd html
+    8  cd documents
+    9  ls
+   10  cd mid
+   11  mkdir html
+   12  ls
+   13  html
+   14  cd html
+   15  mkdir html
+   16  ls
+   17  cd ..html
+   18  cd  ^Vv
+   19  ls
+   20  cd ..document
+   21  cd ..
+   22  cd html
+   23  ls
+   24  html
+   25  cd document
+   26  ls
+   27  cd documents
+   28  ls
+   29  mkdir html
+   30  mkdir html
+   31  mkdir html
+   32  mkdir html
+   33  mkdir html
+   34  cd html
+   35  ls
+   36  ls
+   37  mkdir html
+   38  cd html
+   39  ls
+   40  cd ..
+   41  touch readme.md
+   42  ls
+   43  start readme.md
+   44  touch test.txt
+   45  ls
+   46  rm text.txt
+   47  rm test.txt
+   48  ls
+   49  start readme.md
+   50  gitconfig--
+   51  global user.name
+   52  git config --global user.name
+   53  git config --global user.name "James"
+   54  git config --global user.name
+   55  git config --global user.email
+   56  git config --global user.name "rmj8753@gmail.com"
+   57  git config --global user.emal
+   58  git config --global user.email
+   59  git config --global user.email "rmj8753@gmail.com"
+   60  git config --global user.email
+   61  git init
+   62  cd .git
+   63  cd ..
+   64  ls
+   65  git status
+   66  git commit -m "first comit"
+   67  git add
+   68  git add html
+   69  git commit -m "first commit"
+   70  git commit -m "html"
+   71  git branch -M main
+   72  git reset
+   73  git status
+   74  git add .
+   75  git status
+   76  git commit -m "frist commit"
+   77  git remote add origin https://github.com/rmj8753-glitch/Macahilig.git
+   78  git push -u origin main
+   79  git add .
+   80  git status
+   81  git commit -m "2nd commit"
+   82  git status
+   83  git add .
+   84  git status
+   85  start readme.md
+   86  git add .
+   87  git status
+   88  git commit -m "2nd commit"
+   89  git push
+   90  git status
+   91  git add .
+   92  git status
+   93  git commit -m "2nd commit"
+   94  git push
+   95  history.txt
+   96  history
