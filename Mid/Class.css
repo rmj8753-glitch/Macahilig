@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(107, 122, 204);
+  color: white;
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 20px 0;
+}
+
+.semester-header thead {
+  background-color: rgb(135, 52, 93);
+}
+.semester-header th {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+}
+.schedule thead {
+  background-color: rgb(143, 59, 156);
+}
+.schedule th,
+.schedule td {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.aqua {
+  background-color: aqua;
+  color: black;
+}
+.white {
+  background-color: white;
+  color: black;
+}
+
+.schedule tr:hover td {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.schedule th {
+  font-weight: bold;
+}

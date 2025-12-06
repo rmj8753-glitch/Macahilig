@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calcu.css">
+</head>
+<body>
+
+    <video autoplay muted loop id="bgVideo">
+        <source src="circuit-board.1920x1080.mp4" type="video/mp4">
+    </video>
+
+<header>
+    <h1>Calculator</h1>
+</header>
+
+<div class="calc">
+    <div class="box">
+        
+        <form name="form1">
+            <input type="text" class="input" name="inputvalue">
+        </form>
+
+        <div class="container">
+            <button onclick="form1.inputvalue.value = '' ">C</button>
+            <button onclick="backspace()">⌫</button>
+            <button onclick="insert('/')">/</button>
+            <button onclick="insert('*')">*</button>
+
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('-')">-</button>
+
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('+')">+</button>
+
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button class="equal" onclick="equal()">=</button>
+
+            <button class="zero" onclick="insert('0')">0</button>
+            <button onclick="insert('.')">.</button>
+        </div>
+    </div>
+</div>
+
+
+<script src="Calcu.js"></script>
+
+</body>
+</html>

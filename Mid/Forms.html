@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div>
+        <ul>
+        <li><a href="Portfolio.html">Home</a></li>
+        </ul>
+    </div>
+    <video autoplay muted loop class="bg-video">
+    <source src="star.mp4" stype="video/mp4">
+    </video>
+    <center>
+        <form class="login-form">
+            <h1>LOGIN FORM</h1>
+
+            <label for="username">Username:</label> <br>
+            <input type="text" name="username" id="username" maxlength="20" placeholder="Username"> <br>
+            <label for="password">Password:</label> <br>
+            <input type="password" name="password" id="password" placeholder="Password">
+            <br><br>
+            <input type="submit" value="Submit" onclick="login()">
+        </form>
+
+        <form class="registration-form">
+            <h1>Registration</h1>
+
+            <label for="fullname">Full Name :</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Full Name" required><br><br>
+
+            <label for="email">E-mail :</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com"> <br><br>
+
+            <label>Gender</label>
+            <input type="radio" name="gender" value="Male" checked> Male
+            <input type="radio" name="gender" value="Female"> Female<br><br>
+
+            <label>Genre</label>
+            <input type="checkbox" name="genre" value="Song" checked> Song
+            <input type="checkbox" name="genre" value="Rock"> Rock
+            <input type="checkbox" name="genre" value="Jazz"> Jazz<br><br>
+
+            <label>Favorite Music Services</label>
+            <select name="services" id="services" size="3" multiple>
+                <option value="Itune">Itune</option>
+                <option value="Spotify">Spotify</option>
+                <option value="Apple">Apple</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit" onclick="reg()">
+        </form>
+    </center>
+
+    <script>
+        function login(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if(username === "heysss" && password === "1234"){
+                alert("Success: Your Username: " + username + " and Password: " + password);
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+
+        function reg(){
+            var fullname = document.getElementById('fullname').value;    
+            var email = document.getElementById("email").value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            var genre = document.querySelectorAll('input[name="genre"]:checked');
+            const valuegenre = Array.from(genre).map(checkbox => checkbox.value);
+            var services = document.querySelector('select[name="services"]').value;
+
+            if(valuegenre.length > 0){
+                const genrecheck = valuegenre.join(', ');
+                alert("Details:\nFullname: " + fullname + "\nEmail: " + email + "\nGender: " + gender + "\nGenre: " + genrecheck + "\nMusic Services: " + services);
+            }
+        }
+    </script>
+</body>
+</html>
